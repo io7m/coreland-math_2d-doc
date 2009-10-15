@@ -11,7 +11,9 @@
     (para-verbatim ada_type_synopsis (render "geom_2d-vectors-generic.txt")))
 
   (include "a-geom_2d-vectors-inner_product.ud")
+  (include "a-geom_2d-vectors-magnitude.ud")
+  (include "a-geom_2d-vectors-normalize.ud")
   (include "a-geom_2d-vectors-scalar_product.ud")
   (include "a-geom_2d-vectors-scale.ud")
-  (include "a-geom_2d-vectors-magnitude.ud")
-  (include "a-geom_2d-vectors-normalize.ud"))
+  (include "a-geom_2d-vectors-square_magnitude.ud")
+)

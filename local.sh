@@ -77,11 +77,12 @@ extract_range "function Distance"        "return" "${GEOM_2D_SOURCE}/geom_2d-poi
 extract_range "function To_Radians"      "return" "${GEOM_2D_SOURCE}/geom_2d-trigonometry.ads" "geom_2d-trigonometry-to_radians.txt"
 extract_range "function To_Degrees"      "return" "${GEOM_2D_SOURCE}/geom_2d-trigonometry.ads" "geom_2d-trigonometry-to_degrees.txt"
 
-extract_range "function Inner_Product"   "renames" "${GEOM_2D_SOURCE}/geom_2d-vectors.ads" "geom_2d-vectors-inner_product.txt"
-extract_range "function Scalar_Product"  "renames" "${GEOM_2D_SOURCE}/geom_2d-vectors.ads" "geom_2d-vectors-scalar_product.txt"
-extract_range "function Scale"           "renames" "${GEOM_2D_SOURCE}/geom_2d-vectors.ads" "geom_2d-vectors-scale.txt"
-extract_range "function Magnitude"       "pragma Inline" "${GEOM_2D_SOURCE}/geom_2d-vectors.ads" "geom_2d-vectors-magnitude.txt"
-extract_range "function Normalize"       "pragma Inline" "${GEOM_2D_SOURCE}/geom_2d-vectors.ads" "geom_2d-vectors-normalize.txt"
+extract_range "function Inner_Product"    "renames" "${GEOM_2D_SOURCE}/geom_2d-vectors.ads" "geom_2d-vectors-inner_product.txt"
+extract_range "function Scalar_Product"   "renames" "${GEOM_2D_SOURCE}/geom_2d-vectors.ads" "geom_2d-vectors-scalar_product.txt"
+extract_range "function Scale"            "renames" "${GEOM_2D_SOURCE}/geom_2d-vectors.ads" "geom_2d-vectors-scale.txt"
+extract_range "function Magnitude"        "pragma Inline" "${GEOM_2D_SOURCE}/geom_2d-vectors.ads" "geom_2d-vectors-magnitude.txt"
+extract_range "function Square_Magnitude" "pragma Inline" "${GEOM_2D_SOURCE}/geom_2d-vectors.ads" "geom_2d-vectors-square_magnitude.txt"
+extract_range "function Normalize"        "pragma Inline" "${GEOM_2D_SOURCE}/geom_2d-vectors.ads" "geom_2d-vectors-normalize.txt"
 
 extract_range_exclusive "generic" "^package Geom_2D" "${GEOM_2D_SOURCE}/geom_2d-triangles.ads"    "geom_2d-triangles-generic.txt"
 extract_range_exclusive "generic" "^package Geom_2D" "${GEOM_2D_SOURCE}/geom_2d-points.ads"       "geom_2d-points-generic.txt"
