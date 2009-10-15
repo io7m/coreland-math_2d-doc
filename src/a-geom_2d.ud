@@ -5,4 +5,5 @@
 
   (include "a-geom_2d-types.ud")
   (include "a-geom_2d-points.ud")
-  (include "a-geom_2d-triangles.ud"))
+  (include "a-geom_2d-triangles.ud")
+  (include "a-geom_2d-trigonometry.ud"))

@@ -1,0 +1,1 @@
+type Degrees_t is new Types.Real_Type'Base;

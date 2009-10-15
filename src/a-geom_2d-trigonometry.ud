@@ -1,0 +1,26 @@
+(section
+  (ref "a_geom_2d_trigonometry")
+  (title "Geom_2D.Trigonometry")
+  (contents)
+
+  (para "The " (item ada_package "Geom_2D.Trigonometry") " package provides
+    trigonometric functions.")
+
+  (subsection
+    (title "Generic Formal Parameters")
+    (para-verbatim ada_type_synopsis (render "geom_2d-trigonometry-generic.txt")))
+
+  (subsection
+    (title "Degrees_t")
+    (para-verbatim ada_type_synopsis (render "geom_2d-trigonometry-degrees_t.txt"))
+    (para "The " (item ada_type "Degrees_t") " type represents a measurement
+      of angle in degrees."))
+
+  (subsection
+    (title "Radians_t")
+    (para-verbatim ada_type_synopsis (render "geom_2d-trigonometry-radians_t.txt"))
+    (para "The " (item ada_type "Radians_t") " type represents a measurement
+      of angle in radians."))
+
+  (include "a-geom_2d-trigonometry-to_radians.ud")
+  (include "a-geom_2d-trigonometry-to_degrees.ud"))

@@ -61,22 +61,29 @@ trim_leading_space()
     fatal "could not rename ${file_o}"
 }
 
-extract 'type Point_t' "${GEOM_2D_SOURCE}/geom_2d-types.ads" "geom_2d-types-point_t.txt"
-extract 'type Triangle_t' "${GEOM_2D_SOURCE}/geom_2d-types.ads" "geom_2d-types-triangle_t.txt"
-extract 'type Line_Segment_t' "${GEOM_2D_SOURCE}/geom_2d-types.ads" "geom_2d-types-line_segment_t.txt"
+extract 'type Degrees_t'      "${GEOM_2D_SOURCE}/geom_2d-trigonometry.ads" "geom_2d-trigonometry-degrees_t.txt"
+extract 'type Line_Segment_t' "${GEOM_2D_SOURCE}/geom_2d-types.ads"        "geom_2d-types-line_segment_t.txt"
+extract 'type Point_t'        "${GEOM_2D_SOURCE}/geom_2d-types.ads"        "geom_2d-types-point_t.txt"
+extract 'type Radians_t'      "${GEOM_2D_SOURCE}/geom_2d-trigonometry.ads" "geom_2d-trigonometry-radians_t.txt"
+extract 'type Triangle_t'     "${GEOM_2D_SOURCE}/geom_2d-types.ads"        "geom_2d-types-triangle_t.txt"
 
 extract_range "function Area"            "return" "${GEOM_2D_SOURCE}/geom_2d-triangles.ads" "geom_2d-triangles-area.txt"
 extract_range "function Orthocenter"     "return" "${GEOM_2D_SOURCE}/geom_2d-triangles.ads" "geom_2d-triangles-orthocenter.txt"
 extract_range "function Perimeter"       "return" "${GEOM_2D_SOURCE}/geom_2d-triangles.ads" "geom_2d-triangles-perimeter.txt"
 extract_range "function Point_Is_Inside" "return" "${GEOM_2D_SOURCE}/geom_2d-triangles.ads" "geom_2d-triangles-point_is_inside.txt"
 extract_range "function Distance"        "return" "${GEOM_2D_SOURCE}/geom_2d-points.ads" "geom_2d-points-distance.txt"
+extract_range "function To_Radians"      "return" "${GEOM_2D_SOURCE}/geom_2d-trigonometry.ads" "geom_2d-trigonometry-to_radians.txt"
+extract_range "function To_Degrees"      "return" "${GEOM_2D_SOURCE}/geom_2d-trigonometry.ads" "geom_2d-trigonometry-to_degrees.txt"
 
-extract_range_exclusive "generic" "^package Geom_2D" "${GEOM_2D_SOURCE}/geom_2d-triangles.ads" "geom_2d-triangles-generic.txt"
-extract_range_exclusive "generic" "^package Geom_2D" "${GEOM_2D_SOURCE}/geom_2d-points.ads"    "geom_2d-points-generic.txt"
+extract_range_exclusive "generic" "^package Geom_2D" "${GEOM_2D_SOURCE}/geom_2d-triangles.ads"    "geom_2d-triangles-generic.txt"
+extract_range_exclusive "generic" "^package Geom_2D" "${GEOM_2D_SOURCE}/geom_2d-points.ads"       "geom_2d-points-generic.txt"
+extract_range_exclusive "generic" "^package Geom_2D" "${GEOM_2D_SOURCE}/geom_2d-trigonometry.ads" "geom_2d-trigonometry-generic.txt"
 
 trim_leading_space "src/geom_2d-triangles-area.txt"            "geom_2d-triangles-area.txt"
 trim_leading_space "src/geom_2d-triangles-orthocenter.txt"     "geom_2d-triangles-orthocenter.txt"
 trim_leading_space "src/geom_2d-triangles-perimeter.txt"       "geom_2d-triangles-perimeter.txt"
 trim_leading_space "src/geom_2d-triangles-point_is_inside.txt" "geom_2d-triangles-point_is_inside.txt"
 trim_leading_space "src/geom_2d-points-distance.txt"           "geom_2d-points-distance.txt"
+trim_leading_space "src/geom_2d-trigonometry-to_radians.txt"   "geom_2d-trigonometry-to_radians.txt"
+trim_leading_space "src/geom_2d-trigonometry-to_degrees.txt"   "geom_2d-trigonometry-to_degrees.txt"
 

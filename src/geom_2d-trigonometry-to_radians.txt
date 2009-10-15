@@ -1,0 +1,1 @@
+function To_Radians (Degrees : in Degrees_t) return Radians_t;

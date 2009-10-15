@@ -1,0 +1,12 @@
+(section
+  (ref "a_geom_2d_trigonometry_to_degrees")
+  (title "Geom_2D.Trigonometry.To_Degrees")
+  (para function_desc "Convert radians to degrees.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis (render "geom_2d-trigonometry-to_degrees.txt")))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "To_Degrees") " function converts "
+      (item parameter "Radians") " to degrees.")))
