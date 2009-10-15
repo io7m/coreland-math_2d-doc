@@ -1,0 +1,5 @@
+function Normalize
+  (Vector : in Types.Vector_t) return Types.Vector_t;
+procedure Normalize
+  (Vector : in out Types.Vector_t);
+pragma Inline (Normalize);

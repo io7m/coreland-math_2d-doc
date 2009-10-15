@@ -1,0 +1,17 @@
+(section
+  (ref "a_geom_2d_vectors")
+  (title "Geom_2D.Vectors")
+  (contents)
+
+  (para "The " (item ada_package "Geom_2D.Vectors") " package provides
+    subprograms for processing vectors.")
+
+  (subsection
+    (title "Generic Formal Parameters")
+    (para-verbatim ada_type_synopsis (render "geom_2d-vectors-generic.txt")))
+
+  (include "a-geom_2d-vectors-inner_product.ud")
+  (include "a-geom_2d-vectors-scalar_product.ud")
+  (include "a-geom_2d-vectors-scale.ud")
+  (include "a-geom_2d-vectors-magnitude.ud")
+  (include "a-geom_2d-vectors-normalize.ud"))

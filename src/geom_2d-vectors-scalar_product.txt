@@ -1,0 +1,4 @@
+function Scalar_Product
+  (Vector_A : in Types.Vector_t;
+   Vector_B : in Types.Vector_t) return Types.Real_Type'Base
+  renames Inner_Product;

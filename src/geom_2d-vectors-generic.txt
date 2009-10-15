@@ -1,0 +1,2 @@
+generic
+  with package Types is new Geom_2D.Types (<>);

@@ -1,0 +1,4 @@
+function Scale
+  (Vector : in Types.Vector_t;
+   Scalar : in Types.Real_Type'Base) return Types.Vector_t
+  renames Types."*";

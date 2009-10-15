@@ -1,0 +1,3 @@
+function Magnitude
+  (Vector : in Types.Vector_t) return Types.Real_Type'Base;
+pragma Inline (Magnitude);
