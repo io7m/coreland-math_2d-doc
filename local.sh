@@ -35,6 +35,8 @@ extract_range()
     fatal "could not extract range"
   mv "${file_o}.tmp" "${file_o}" ||
     fatal "could not rename ${file_o}.tmp ${file_o}"
+
+  trim_leading_space "${file_o}" "$4"
 }
 
 extract_range_exclusive()
@@ -75,15 +77,13 @@ extract_range "function Distance"        "return" "${GEOM_2D_SOURCE}/geom_2d-poi
 extract_range "function To_Radians"      "return" "${GEOM_2D_SOURCE}/geom_2d-trigonometry.ads" "geom_2d-trigonometry-to_radians.txt"
 extract_range "function To_Degrees"      "return" "${GEOM_2D_SOURCE}/geom_2d-trigonometry.ads" "geom_2d-trigonometry-to_degrees.txt"
 
+extract_range "function Inner_Product"   "renames" "${GEOM_2D_SOURCE}/geom_2d-vectors.ads" "geom_2d-vectors-inner_product.txt"
+extract_range "function Scalar_Product"  "renames" "${GEOM_2D_SOURCE}/geom_2d-vectors.ads" "geom_2d-vectors-scalar_product.txt"
+extract_range "function Scale"           "renames" "${GEOM_2D_SOURCE}/geom_2d-vectors.ads" "geom_2d-vectors-scale.txt"
+extract_range "function Magnitude"       "pragma Inline" "${GEOM_2D_SOURCE}/geom_2d-vectors.ads" "geom_2d-vectors-magnitude.txt"
+extract_range "function Normalize"       "pragma Inline" "${GEOM_2D_SOURCE}/geom_2d-vectors.ads" "geom_2d-vectors-normalize.txt"
+
 extract_range_exclusive "generic" "^package Geom_2D" "${GEOM_2D_SOURCE}/geom_2d-triangles.ads"    "geom_2d-triangles-generic.txt"
 extract_range_exclusive "generic" "^package Geom_2D" "${GEOM_2D_SOURCE}/geom_2d-points.ads"       "geom_2d-points-generic.txt"
 extract_range_exclusive "generic" "^package Geom_2D" "${GEOM_2D_SOURCE}/geom_2d-trigonometry.ads" "geom_2d-trigonometry-generic.txt"
-
-trim_leading_space "src/geom_2d-triangles-area.txt"            "geom_2d-triangles-area.txt"
-trim_leading_space "src/geom_2d-triangles-orthocenter.txt"     "geom_2d-triangles-orthocenter.txt"
-trim_leading_space "src/geom_2d-triangles-perimeter.txt"       "geom_2d-triangles-perimeter.txt"
-trim_leading_space "src/geom_2d-triangles-point_is_inside.txt" "geom_2d-triangles-point_is_inside.txt"
-trim_leading_space "src/geom_2d-points-distance.txt"           "geom_2d-points-distance.txt"
-trim_leading_space "src/geom_2d-trigonometry-to_radians.txt"   "geom_2d-trigonometry-to_radians.txt"
-trim_leading_space "src/geom_2d-trigonometry-to_degrees.txt"   "geom_2d-trigonometry-to_degrees.txt"
-
+extract_range_exclusive "generic" "^package Geom_2D" "${GEOM_2D_SOURCE}/geom_2d-vectors.ads" "geom_2d-vectors-generic.txt"
