@@ -1,0 +1,12 @@
+(section
+  (ref "a_geom_2d_triangles_perimeter")
+  (title "Geom_2D.Triangles.Perimeter")
+  (para function_desc "Calculate perimeter of triangle.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis (render "geom_2d-triangles-perimeter.txt")))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Perimeter") " function returns the perimeter
+      of " (item parameter "Triangle") ".")))

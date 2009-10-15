@@ -1,0 +1,8 @@
+(section
+  (title "Orientation")
+
+  (subsection
+    (title "Overview")
+
+    (para "This package provides a set of subprograms for working with
+      two-dimensional geometric forms.")))

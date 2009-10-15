@@ -1,0 +1,16 @@
+(section
+  (ref "a_geom_2d_triangles")
+  (title "Geom_2D.Triangles")
+  (contents)
+
+  (para "The " (item ada_package "Geom_2D.Triangles") " package provides
+    subprograms for processing triangles.")
+
+  (subsection
+    (title "Generic Formal Parameters")
+    (para-verbatim ada_type_synopsis (render "geom_2d-triangles-generic.txt")))
+
+  (include "a-geom_2d-triangles-area.ud")
+  (include "a-geom_2d-triangles-orthocenter.ud")
+  (include "a-geom_2d-triangles-perimeter.ud")
+  (include "a-geom_2d-triangles-point_is_inside.ud"))

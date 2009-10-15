@@ -1,0 +1,12 @@
+(section
+  (ref "a_geom_2d_triangles_area")
+  (title "Geom_2D.Triangles.Area")
+  (para function_desc "Calculate area of triangle.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis (render "geom_2d-triangles-area.txt")))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Area") " function returns the area
+      of " (item parameter "Triangle") ".")))

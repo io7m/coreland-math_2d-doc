@@ -1,0 +1,3 @@
+function Point_Is_Inside
+  (Triangle : in Types.Triangle_t;
+   Point    : in Types.Point_t) return Boolean;

@@ -1,0 +1,8 @@
+(section
+  (ref "a_geom_2D")
+  (title "Geom_2D API Reference")
+  (contents)
+
+  (include "a-geom_2d-types.ud")
+  (include "a-geom_2d-points.ud")
+  (include "a-geom_2d-triangles.ud"))

@@ -1,0 +1,13 @@
+(section
+  (ref "a_geom_2d_points")
+  (title "Geom_2D.Points")
+  (contents)
+
+  (para "The " (item ada_package "Geom_2D.Points") " package provides
+    subprograms for processing points.")
+
+  (subsection
+    (title "Generic Formal Parameters")
+    (para-verbatim ada_type_synopsis (render "geom_2d-points-generic.txt")))
+
+  (include "a-geom_2d-points-distance.ud"))

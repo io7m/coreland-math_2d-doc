@@ -1,0 +1,2 @@
+function Orthocenter
+  (Triangle : in Types.Triangle_t) return Types.Point_t;

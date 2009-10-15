@@ -1,0 +1,13 @@
+(section
+  (ref "a_geom_2d_triangles_point_is_inside")
+  (title "Geom_2D.Triangles.Point_Is_Inside")
+  (para function_desc "Check if point lies within triangle.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis (render "geom_2d-triangles-point_is_inside.txt")))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Point_Is_Inside") " function returns "
+      (item constant "True") " if " (item parameter "Point") " lies within "
+      (item parameter "Triangle") ".")))

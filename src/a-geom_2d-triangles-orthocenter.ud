@@ -1,0 +1,14 @@
+(section
+  (ref "a_geom_2d_triangles_orthocenter")
+  (title "Geom_2D.Triangles.Orthocenter")
+  (para function_desc "Calculate orthocenter of triangle.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis (render "geom_2d-triangles-orthocenter.txt")))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Orthocenter") " function returns the orthocenter
+      of " (item parameter "Triangle") ".")
+    (para
+      "The orthocenter lies within the triangle iff the triangle is not obtuse.")))

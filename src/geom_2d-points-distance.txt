@@ -1,0 +1,3 @@
+function Distance
+  (Point_A : in Types.Point_t;
+   Point_B : in Types.Point_t) return Types.Real_Type'Base;

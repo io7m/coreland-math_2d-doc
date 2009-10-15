@@ -1,0 +1,1 @@
+type Line_Segment_t is array (Line_Segment_Point_Index_t) of Point_t;

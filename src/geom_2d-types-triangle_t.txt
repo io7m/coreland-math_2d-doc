@@ -1,0 +1,1 @@
+type Triangle_t is array (Triangle_Point_Index_t) of Point_t;
