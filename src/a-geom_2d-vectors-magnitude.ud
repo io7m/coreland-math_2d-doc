@@ -1,0 +1,12 @@
+(section
+  (ref "a_geom_2d_vectors_magnitude")
+  (title "Geom_2D.Vectors.Magnitude")
+  (para function_desc "Calculate magnitude of vector.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis (render "geom_2d-vectors-magnitude.txt")))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Magnitude") " function calculates the
+      magnitude of " (item parameter "Vector") ".")))

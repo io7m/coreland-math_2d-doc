@@ -1,0 +1,12 @@
+(section
+  (ref "a_geom_2d_vectors_normalize")
+  (title "Geom_2D.Vectors.Normalize")
+  (para subprogram_desc "Normalize vector.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim subprogram_synopsis (render "geom_2d-vectors-normalize.txt")))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_subprogram "Normalize") " subprograms normalize "
+      (item parameter "Vector") ".")))

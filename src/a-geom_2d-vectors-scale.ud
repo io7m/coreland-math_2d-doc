@@ -1,0 +1,13 @@
+(section
+  (ref "a_geom_2d_vectors_scale")
+  (title "Geom_2D.Vectors.Scale")
+  (para function_desc "Scale vectors by scalar.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis (render "geom_2d-vectors-scale.txt")))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Scale") " function returns "
+      (item parameter "Vector") " with each element scaled by "
+      (item parameter "Scalar") ".")))

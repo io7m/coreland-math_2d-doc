@@ -1,0 +1,15 @@
+(section
+  (ref "a_geom_2d_vectors_scalar_product")
+  (title "Geom_2D.Vectors.Scalar_Product")
+  (para function_desc "Calculate inner product of two vectors.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis (render "geom_2d-vectors-scalar_product.txt")))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Scalar_Product") " function returns the inner
+      product of the vectors " (item parameter "Vector_A") " and "
+      (item parameter "Vector_B") ".")
+    (para "The function is equivalent to "
+      (link "a_geom_2d_vectors_inner_product" "Inner_Product") ".")))
