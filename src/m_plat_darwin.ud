@@ -1,0 +1,45 @@
+(subsection
+  (title "Darwin")
+  (para "On OS X, with versions of GNAT <= 4.3, the build will likely fail with
+    the following error:")
+  (para-verbatim example
+"ld: library not found for -lgnalasup
+collect2: ld returned 1 exit status")
+  (para "This is a compiler problem. Essentially, these versions of GNAT ship
+    with a dependency on a nonexistent library which is only linked against
+    when using some of the " (item ada_package "Ada.Numerics") " packages.")
+  (para "The " (item file_name "i-forbla.adb") " file contains the following:")
+  (para-verbatim example
+"package body Interfaces.Fortran.BLAS is
+  pragma Linker_Options (\"-lgnala\");
+  pragma Linker_Options (\"-lgnalasup\");
+  pragma Linker_Options (\"-lm\");
+end Interfaces.Fortran.BLAS;")
+  (para "Given that " (item file_name "libgnalasup") " doesn't appear to
+    be distributed anywhere, the file should read:")
+  (para-verbatim example
+"package body Interfaces.Fortran.BLAS is
+  pragma Linker_Options (\"-lgnala\");
+  pragma Linker_Options (\"-llapack\");
+  pragma Linker_Options (\"-lblas\");
+  pragma Linker_Options (\"-lm\");
+end Interfaces.Fortran.BLAS;")
+  (para "The problem may exist for other platforms (although none have
+    exhibited the problem to date).")
+  (para "An unpleasant workaround is to patch the " (item file_name "i-forbla.ali")
+    " file to change the built-in linker settings:")
+  (para-verbatim example
+"--- i-forbla.ali.orig  2010-01-11 09:27:40.000000000 +0000
++++ i-forbla.ali  2010-01-11 09:33:38.000000000 +0000
+@@ -15,7 +15,9 @@
+ U interfaces.fortran.blas%b  i-forbla.adb  7b03374e NE PK
+ W interfaces.fortran%s i-fortra.adb    i-fortra.ali
+ L \"-lgnala\"
+-L \"-lgnalasup\"
++L \"-L/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/\"
++L \"-lLAPACK\"
++L \"-lBLAS\"
+ L \"-lm\"
+ 
+ U interfaces.fortran.blas%s  i-forbla.ads  574aad9d EB NE PU PK")
+  (para "This was corrected in later versions of GNAT."))
