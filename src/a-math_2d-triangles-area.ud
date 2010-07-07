@@ -1,10 +1,10 @@
 (section
-  (ref "a_geom_2d_triangles_area")
-  (title "Geom_2D.Triangles.Area")
+  (ref "a_math_2d_triangles_area")
+  (title "Math_2D.Triangles.Area")
   (para function_desc "Calculate area of triangle.")
   (subsection
     (title "Synopsis")
-    (para-verbatim function_synopsis (render "geom_2d-triangles-area.txt")))
+    (para-verbatim function_synopsis (render "math_2d-triangles-area.txt")))
   (subsection
     (title "Description")
     (para

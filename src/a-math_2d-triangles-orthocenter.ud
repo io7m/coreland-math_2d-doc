@@ -1,10 +1,10 @@
 (section
-  (ref "a_geom_2d_triangles_orthocenter")
-  (title "Geom_2D.Triangles.Orthocenter")
+  (ref "a_math_2d_triangles_orthocenter")
+  (title "Math_2D.Triangles.Orthocenter")
   (para function_desc "Calculate orthocenter of triangle.")
   (subsection
     (title "Synopsis")
-    (para-verbatim function_synopsis (render "geom_2d-triangles-orthocenter.txt")))
+    (para-verbatim function_synopsis (render "math_2d-triangles-orthocenter.txt")))
   (subsection
     (title "Description")
     (para

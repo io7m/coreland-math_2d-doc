@@ -1,10 +1,10 @@
 (section
-  (ref "a_geom_2d_vectors_square_magnitude")
-  (title "Geom_2D.Vectors.Square_Magnitude")
+  (ref "a_math_2d_vectors_square_magnitude")
+  (title "Math_2D.Vectors.Square_Magnitude")
   (para function_desc "Calculate square magnitude of vector.")
   (subsection
     (title "Synopsis")
-    (para-verbatim function_synopsis (render "geom_2d-vectors-square_magnitude.txt")))
+    (para-verbatim function_synopsis (render "math_2d-vectors-square_magnitude.txt")))
   (subsection
     (title "Description")
     (para

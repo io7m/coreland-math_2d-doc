@@ -1,2 +1,2 @@
 generic
-  with package Types is new Geom_2D.Types (<>);
+  with package Types is new Math_2D.Types (<>);

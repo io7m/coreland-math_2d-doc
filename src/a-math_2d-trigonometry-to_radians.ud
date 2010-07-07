@@ -1,10 +1,10 @@
 (section
-  (ref "a_geom_2d_trigonometry_to_radians")
-  (title "Geom_2D.Trigonometry.To_Radians")
+  (ref "a_math_2d_trigonometry_to_radians")
+  (title "Math_2D.Trigonometry.To_Radians")
   (para function_desc "Convert degrees to radians.")
   (subsection
     (title "Synopsis")
-    (para-verbatim function_synopsis (render "geom_2d-trigonometry-to_radians.txt")))
+    (para-verbatim function_synopsis (render "math_2d-trigonometry-to_radians.txt")))
   (subsection
     (title "Description")
     (para

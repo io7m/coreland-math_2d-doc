@@ -1,3 +1,3 @@
 generic
-  with package Types   is new Geom_2D.Types (<>);
-  with package Vectors is new Geom_2D.Vectors (Types);
+  with package Types   is new Math_2D.Types (<>);
+  with package Vectors is new Math_2D.Vectors (Types);

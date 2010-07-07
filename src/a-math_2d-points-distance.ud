@@ -1,10 +1,10 @@
 (section
-  (ref "a_geom_2d_points_distance")
-  (title "Geom_2D.Points.Distance")
+  (ref "a_math_2d_points_distance")
+  (title "Math_2D.Points.Distance")
   (para function_desc "Calculate distance between points.")
   (subsection
     (title "Synopsis")
-    (para-verbatim function_synopsis (render "geom_2d-points-distance.txt")))
+    (para-verbatim function_synopsis (render "math_2d-points-distance.txt")))
   (subsection
     (title "Description")
     (para

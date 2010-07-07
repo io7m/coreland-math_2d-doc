@@ -1,9 +1,9 @@
 (section
-  (ref "a_geom_2d_types")
-  (title "Geom_2D.Types")
+  (ref "a_math_2d_types")
+  (title "Math_2D.Types")
   (contents)
 
-  (para "The " (item ada_package "Geom_2D.Types") " package provides
+  (para "The " (item ada_package "Math_2D.Types") " package provides
     various elementary types for use with the rest of the API.")
 
   (subsection
@@ -15,18 +15,18 @@
 
   (subsection
     (title "Point_t")
-    (para-verbatim ada_type_synopsis (render "geom_2d-types-point_t.txt"))
+    (para-verbatim ada_type_synopsis (render "math_2d-types-point_t.txt"))
     (para "The " (item ada_type "Point_t") " type represents a point in
       two-dimensional space."))
 
   (subsection
     (title "Triangle_t")
-    (para-verbatim ada_type_synopsis (render "geom_2d-types-triangle_t.txt"))
+    (para-verbatim ada_type_synopsis (render "math_2d-types-triangle_t.txt"))
     (para "The " (item ada_type "Triangle_t") " type represents a triangle
       as an array of three points."))
 
   (subsection
     (title "Line_Segment_t")
-    (para-verbatim ada_type_synopsis (render "geom_2d-types-line_segment_t.txt"))
+    (para-verbatim ada_type_synopsis (render "math_2d-types-line_segment_t.txt"))
     (para "The " (item ada_type "Line_Segment_t") " type represents a line
       segment as an array of two points.")))

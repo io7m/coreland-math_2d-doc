@@ -1,11 +1,11 @@
 (section
-  (ref "a_geom_2D")
-  (title "Geom_2D API Reference")
+  (ref "a_math_2D")
+  (title "Math_2D API Reference")
   (contents)
 
-  (include "a-geom_2d-types.ud")
-  (include "a-geom_2d-points.ud")
-  (include "a-geom_2d-triangles.ud")
-  (include "a-geom_2d-trigonometry.ud")
-  (include "a-geom_2d-vectors.ud")
+  (include "a-math_2d-types.ud")
+  (include "a-math_2d-points.ud")
+  (include "a-math_2d-triangles.ud")
+  (include "a-math_2d-trigonometry.ud")
+  (include "a-math_2d-vectors.ud")
 )

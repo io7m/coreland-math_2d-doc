@@ -17,19 +17,19 @@
           (item "configuration file")
           (item "description"))
         (t-row
-          (item file_name "/usr/local/share/coreland/geom_2D-repos")
+          (item file_name "/usr/local/share/coreland/math_2D-repos")
           (item file_name "conf-repos")
           (item "Source code repository."))
         (t-row
-          (item file_name "/usr/local/lib/coreland/geom_2D-static")
+          (item file_name "/usr/local/lib/coreland/math_2D-static")
           (item file_name "conf-slibdir")
           (item "Static library directory."))
         (t-row
-          (item file_name "/usr/local/lib/coreland/geom_2D")
+          (item file_name "/usr/local/lib/coreland/math_2D")
           (item file_name "conf-dlibdir")
           (item "Dynamic library directory."))
         (t-row
-          (item file_name "/usr/local/include/coreland/geom_2D")
+          (item file_name "/usr/local/include/coreland/math_2D")
           (item file_name "conf-incdir")
           (item "Header file directory."))
         (t-row

@@ -1,10 +1,10 @@
 (section
-  (ref "a_geom_2d_triangles_perimeter")
-  (title "Geom_2D.Triangles.Perimeter")
+  (ref "a_math_2d_triangles_perimeter")
+  (title "Math_2D.Triangles.Perimeter")
   (para function_desc "Calculate perimeter of triangle.")
   (subsection
     (title "Synopsis")
-    (para-verbatim function_synopsis (render "geom_2d-triangles-perimeter.txt")))
+    (para-verbatim function_synopsis (render "math_2d-triangles-perimeter.txt")))
   (subsection
     (title "Description")
     (para
